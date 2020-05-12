@@ -11,5 +11,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onKeyUp(keyUpEvent){
+    console.log(keyUpEvent);
+    keyUpEvent.isTrusted == true && alert('hi raja');
+  }
 }
